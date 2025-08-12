@@ -10,8 +10,11 @@ def converter_pdf_para_docx():
     O arquivo convertido será salvo no mesmo diretório.
     """
 
-    PDF_FILE = filedialog.askopenfilename(title="Selecione o PDF para ser convertido: ",
-                                          filetypes=[("Arquivos Excel", "*.xlsx *.xls")])
+    PDF_FILE = filedialog.askopenfilename(
+    title="Selecione o PDF para ser convertido:",
+    filetypes=[("Arquivos PDF", "*.pdf")]
+    )
+    
     DOCX_FILE = "saida.docx"    
 
     # Verificação simples se o PDF existe no diretório
@@ -41,4 +44,5 @@ if __name__ == "__main__":
     root = tk.TK()
     root.withdraw()
     converter_pdf_para_docx()
+
 
