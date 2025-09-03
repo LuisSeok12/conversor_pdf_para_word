@@ -41,8 +41,9 @@ def converter_pdf_para_docx():
 
 
 if __name__ == "__main__":
-    root = tk.TK()
+    root = tk.Tk()
     root.withdraw()
     converter_pdf_para_docx()
+
 
 
